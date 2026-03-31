@@ -1,16 +1,62 @@
-# React + Vite
+# Weather Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Role:** Junior ReactJS Frontend Developer  
+**Project:** Weather Dashboard using Open-Meteo API  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Project Overview
 
-## React Compiler
+This is a **responsive weather web application** built with **ReactJS**.  
+It uses the **Open-Meteo API** ([https://open-meteo.com](https://open-meteo.com)) to show **real-time and historical weather data**.  
+The app automatically detects the user’s location via browser GPS to display **localized weather information**.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The application is **mobile-friendly** and optimized for fast performance.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+### Current Weather & Hourly Forecast
+- Displays **temperature** (min, max, current)
+- **Atmospheric conditions**: Precipitation, Relative Humidity, UV Index
+- **Sun cycle**: Sunrise and Sunset
+- **Wind & Air**: Max Wind Speed, Precipitation Probability
+- **Air Quality Metrics**: AQI, PM10, PM2.5, CO, CO2, NO2, SO2
+- **Hourly visualizations** for:
+  - Temperature (Celsius/Fahrenheit toggle)
+  - Humidity
+  - Precipitation
+  - Visibility
+  - Wind Speed
+  - PM10 & PM2.5 combined graph
+
+### Historical Weather Analysis
+- Select **date range** (up to 2 years)
+- View trends for:
+  - Temperature (mean, min, max)
+  - Sun cycle (sunrise & sunset in IST)
+  - Precipitation totals
+  - Max wind speed & dominant wind direction
+  - PM10 & PM2.5 trends
+- Interactive **charts** with zoom and horizontal scroll
+- Fully **mobile responsive**
+
+---
+
+## Technical Stack
+
+- **Frontend:** ReactJS  
+- **API:** Open-Meteo API  
+- **Location Detection:** Browser GPS  
+- **Charts/Visualization:** Your choice of React chart library (e.g., Chart.js, Recharts)  
+- **Performance:** Optimized to load data quickly (<500ms)
+
+---
+
+## Installation & Running Locally
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/<your-username>/Weather_Dashboard.git
